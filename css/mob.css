@@ -98,7 +98,7 @@ body{
 #home p {
     text-align: center;
     color: rgb(255, 255, 255);
-    font-size: 12px;
+    font-size: 11px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -129,7 +129,7 @@ body{
 }
 #services .box p {
     font-family: 'Poppins', sans-serif;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 /* Client */
@@ -204,7 +204,7 @@ footer {
 
 /* Utility */
 .h-primary {
-    font-size: 30px;
+    font-size: 25px;
     padding: 5px;
     font-family: 'Poppins', sans-serif;
 }
@@ -227,7 +227,7 @@ footer {
     cursor: pointer;
 }
 .our {
-    font-size: 30px;
+    font-size: 25px;
     padding: 5px;
     font-family: 'Poppins', sans-serif;
     text-shadow: -2px 0 rgb(255, 255, 255), 0 2px rgb(255, 255, 255), 2px 0 rgb(255, 255, 255), 0 -2px rgb(255, 255, 255);
