@@ -1,0 +1,241 @@
+/* html */
+html{
+    scroll-behavior: smooth;
+}
+/* body */
+body{
+    /* background-color: rgb(0, 0, 0); */
+    background: url('../bg/bg11.jpg') no-repeat center center/cover;
+}
+/* Navigation */
+
+#navbar{
+    flex-direction: column;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+}
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#logo {
+    margin: 5px 10px;
+
+}
+#logo img {
+    height: 40px;
+    margin: 3px 3px;
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 10px;
+    padding: 1px;
+}
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.24);
+    border: 2px solid rgb(255, 255, 255);
+}
+#navbar input[type=text] {
+    float: right;
+    padding: 8px;
+    border: none;
+    margin-top: 5px;
+    margin-right: 0px;
+    font-size: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Home */
+#home{
+
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before{
+    height: 375px;
+    content: "";
+    background: url('../bg/bg1.jpg') no-repeat fixed center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    
+}
+#home h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    /* text-shadow: 0 7px rgb(0, 0, 0); */
+}
+#home p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Services */
+#services{
+    flex-direction: column;
+    margin: 5px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+
+}
+#services .box{
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgba(250, 245, 245, 0.774);
+    padding: 10px;
+    margin: 3px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#services .box img {
+    height: 60px;
+    display: block;
+    margin: auto;
+}
+#services .box p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+/* Client */
+#client-section{
+    overflow: hidden;
+    height: 150px;
+    /* position: relative; */
+}
+#client-section::before {
+    content: "";
+    background: url('../bg/bg1.jpg') no-repeat fixed center/cover;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+}
+
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-item {
+    padding: 5px;
+}
+#client img {
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Contact */
+#contact {
+    /* position: relative; */
+}
+#contact::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 63%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact-box {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+#contact-box form {
+    width: 60%;
+}
+#contact-box label {
+    color: white;
+    text-shadow: 0 7px rgb(0, 0, 0);
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+#contact-box input, #contact-box textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+/* Footer */
+footer {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+}
+
+/* Utility */
+.h-primary {
+    font-size: 30px;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.h-secondary {
+    font-size: 15px;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button {
+    font-family: 'Poppins', sans-serif;
+    padding: 6px 20px;
+    background-color: brown;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 5px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-size: 10px;
+    cursor: pointer;
+}
+.our {
+    font-size: 30px;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: -2px 0 rgb(255, 255, 255), 0 2px rgb(255, 255, 255), 2px 0 rgb(255, 255, 255), 0 -2px rgb(255, 255, 255);
+}
+.shadow {
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+.center {
+    text-align: center;
+}
